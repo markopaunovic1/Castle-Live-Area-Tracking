@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import CarTrackingTest
+@testable import CarTrackingTestUITests
 
 final class CarTrackingTestTests: XCTestCase {
 

@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF22998B2A56C8400007C860 /* CarsInLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22998A2A56C8400007C860 /* CarsInLine.swift */; };
+		AF22998E2A56CA120007C860 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22998D2A56CA120007C860 /* CarDetailView.swift */; };
+		AF2299932A56D7C00007C860 /* Broadsheet Bubble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF2299922A56D7C00007C860 /* Broadsheet Bubble.ttf */; };
+		AF4B474B2A684D0300C30BB7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF4B474A2A684D0300C30BB7 /* FirebaseFirestoreSwift */; };
 		AF8821592A49A9CD0081FE6E /* CarTrackingTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8821582A49A9CD0081FE6E /* CarTrackingTestApp.swift */; };
-		AF88215B2A49A9CD0081FE6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88215A2A49A9CD0081FE6E /* ContentView.swift */; };
+		AF88215B2A49A9CD0081FE6E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88215A2A49A9CD0081FE6E /* MainView.swift */; };
 		AF88215D2A49A9CE0081FE6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF88215C2A49A9CE0081FE6E /* Assets.xcassets */; };
 		AF8821602A49A9CE0081FE6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF88215F2A49A9CE0081FE6E /* Preview Assets.xcassets */; };
 		AF88216A2A49A9CE0081FE6E /* CarTrackingTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8821692A49A9CE0081FE6E /* CarTrackingTestTests.swift */; };
 		AF8821742A49A9CE0081FE6E /* CarTrackingTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8821732A49A9CE0081FE6E /* CarTrackingTestUITests.swift */; };
 		AF8821762A49A9CE0081FE6E /* CarTrackingTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8821752A49A9CE0081FE6E /* CarTrackingTestUITestsLaunchTests.swift */; };
+		AF8821832A49AC0E0081FE6E /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8821822A49AC0E0081FE6E /* Car.swift */; };
+		AF8821862A4DEC4C0081FE6E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AF8821852A4DEC4C0081FE6E /* FirebaseAuth */; };
+		AF8821882A4DEC4C0081FE6E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = AF8821872A4DEC4C0081FE6E /* FirebaseDatabase */; };
+		AF88218A2A4DEC4C0081FE6E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AF8821892A4DEC4C0081FE6E /* FirebaseFirestore */; };
+		AF88218C2A4DEC4C0081FE6E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AF88218B2A4DEC4C0081FE6E /* FirebaseStorage */; };
+		AF88218E2A4DECFF0081FE6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF88218D2A4DECFF0081FE6E /* GoogleService-Info.plist */; };
+		AFAF44AC2A58EA0100480A60 /* RandomOrdersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAF44AB2A58EA0100480A60 /* RandomOrdersModel.swift */; };
+		AFAF44B02A67245000480A60 /* CarImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAF44AF2A67245000480A60 /* CarImages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF22998A2A56C8400007C860 /* CarsInLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsInLine.swift; sourceTree = "<group>"; };
+		AF22998D2A56CA120007C860 /* CarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
+		AF2299912A56D09B0007C860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AF2299922A56D7C00007C860 /* Broadsheet Bubble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Broadsheet Bubble.ttf"; sourceTree = "<group>"; };
 		AF8821552A49A9CD0081FE6E /* CarTrackingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarTrackingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8821582A49A9CD0081FE6E /* CarTrackingTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTrackingTestApp.swift; sourceTree = "<group>"; };
-		AF88215A2A49A9CD0081FE6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AF88215A2A49A9CD0081FE6E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AF88215C2A49A9CE0081FE6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF88215F2A49A9CE0081FE6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF8821652A49A9CE0081FE6E /* CarTrackingTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarTrackingTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +60,10 @@
 		AF88216F2A49A9CE0081FE6E /* CarTrackingTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarTrackingTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8821732A49A9CE0081FE6E /* CarTrackingTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTrackingTestUITests.swift; sourceTree = "<group>"; };
 		AF8821752A49A9CE0081FE6E /* CarTrackingTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTrackingTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF8821822A49AC0E0081FE6E /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		AF88218D2A4DECFF0081FE6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AFAF44AB2A58EA0100480A60 /* RandomOrdersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomOrdersModel.swift; sourceTree = "<group>"; };
+		AFAF44AF2A67245000480A60 /* CarImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +71,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF4B474B2A684D0300C30BB7 /* FirebaseFirestoreSwift in Frameworks */,
+				AF8821882A4DEC4C0081FE6E /* FirebaseDatabase in Frameworks */,
+				AF88218C2A4DEC4C0081FE6E /* FirebaseStorage in Frameworks */,
+				AF8821862A4DEC4C0081FE6E /* FirebaseAuth in Frameworks */,
+				AF88218A2A4DEC4C0081FE6E /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +96,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF2299892A56C81C0007C860 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFAF44AB2A58EA0100480A60 /* RandomOrdersModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF22998C2A56C9D80007C860 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF22998A2A56C8400007C860 /* CarsInLine.swift */,
+				AF22998D2A56CA120007C860 /* CarDetailView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AF4B47492A684D0300C30BB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF88214C2A49A9CC0081FE6E = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +127,7 @@
 				AF8821682A49A9CE0081FE6E /* CarTrackingTestTests */,
 				AF8821722A49A9CE0081FE6E /* CarTrackingTestUITests */,
 				AF8821562A49A9CD0081FE6E /* Products */,
+				AF4B47492A684D0300C30BB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,9 +144,15 @@
 		AF8821572A49A9CD0081FE6E /* CarTrackingTest */ = {
 			isa = PBXGroup;
 			children = (
+				AF2299912A56D09B0007C860 /* Info.plist */,
+				AF2299922A56D7C00007C860 /* Broadsheet Bubble.ttf */,
 				AF8821582A49A9CD0081FE6E /* CarTrackingTestApp.swift */,
-				AF88215A2A49A9CD0081FE6E /* ContentView.swift */,
+				AFAF44AE2A6723B700480A60 /* Objects */,
+				AFAF44AD2A67237B00480A60 /* Views */,
+				AF22998C2A56C9D80007C860 /* ViewModel */,
+				AF2299892A56C81C0007C860 /* Model */,
 				AF88215C2A49A9CE0081FE6E /* Assets.xcassets */,
+				AF88218D2A4DECFF0081FE6E /* GoogleService-Info.plist */,
 				AF88215E2A49A9CE0081FE6E /* Preview Content */,
 			);
 			path = CarTrackingTest;
@@ -127,6 +183,23 @@
 			path = CarTrackingTestUITests;
 			sourceTree = "<group>";
 		};
+		AFAF44AD2A67237B00480A60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF88215A2A49A9CD0081FE6E /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AFAF44AE2A6723B700480A60 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				AFAF44AF2A67245000480A60 /* CarImages.swift */,
+				AF8821822A49AC0E0081FE6E /* Car.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,8 +214,16 @@
 			buildRules = (
 			);
 			dependencies = (
+				AF8821902A562AE00081FE6E /* PBXTargetDependency */,
 			);
 			name = CarTrackingTest;
+			packageProductDependencies = (
+				AF8821852A4DEC4C0081FE6E /* FirebaseAuth */,
+				AF8821872A4DEC4C0081FE6E /* FirebaseDatabase */,
+				AF8821892A4DEC4C0081FE6E /* FirebaseFirestore */,
+				AF88218B2A4DEC4C0081FE6E /* FirebaseStorage */,
+				AF4B474A2A684D0300C30BB7 /* FirebaseFirestoreSwift */,
+			);
 			productName = CarTrackingTest;
 			productReference = AF8821552A49A9CD0081FE6E /* CarTrackingTest.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +296,9 @@
 				Base,
 			);
 			mainGroup = AF88214C2A49A9CC0081FE6E;
+			packageReferences = (
+				AF8821842A4DEC4C0081FE6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = AF8821562A49A9CD0081FE6E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +316,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF8821602A49A9CE0081FE6E /* Preview Assets.xcassets in Resources */,
+				AF88218E2A4DECFF0081FE6E /* GoogleService-Info.plist in Resources */,
+				AF2299932A56D7C00007C860 /* Broadsheet Bubble.ttf in Resources */,
 				AF88215D2A49A9CE0081FE6E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +343,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF88215B2A49A9CD0081FE6E /* ContentView.swift in Sources */,
+				AFAF44B02A67245000480A60 /* CarImages.swift in Sources */,
+				AF88215B2A49A9CD0081FE6E /* MainView.swift in Sources */,
+				AFAF44AC2A58EA0100480A60 /* RandomOrdersModel.swift in Sources */,
+				AF8821832A49AC0E0081FE6E /* Car.swift in Sources */,
+				AF22998B2A56C8400007C860 /* CarsInLine.swift in Sources */,
+				AF22998E2A56CA120007C860 /* CarDetailView.swift in Sources */,
 				AF8821592A49A9CD0081FE6E /* CarTrackingTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +382,10 @@
 			isa = PBXTargetDependency;
 			target = AF8821542A49A9CD0081FE6E /* CarTrackingTest */;
 			targetProxy = AF8821702A49A9CE0081FE6E /* PBXContainerItemProxy */;
+		};
+		AF8821902A562AE00081FE6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = AF88218F2A562AE00081FE6E /* FirebaseFirestore */;
 		};
 /* End PBXTargetDependency section */
 
@@ -414,11 +509,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_CODE_COVERAGE = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CarTrackingTest/Preview Content\"";
+				DEVELOPMENT_TEAM = NAK3289CTH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarTrackingTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -429,7 +527,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CarTrackingTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marko.CarTrackingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -442,11 +540,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_CODE_COVERAGE = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CarTrackingTest/Preview Content\"";
+				DEVELOPMENT_TEAM = NAK3289CTH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarTrackingTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,7 +558,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CarTrackingTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marko.CarTrackingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -472,10 +573,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NAK3289CTH;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CarTrackingTestTests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.example.CarTracingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -491,10 +594,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NAK3289CTH;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CarTrackingTestTests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.example.CarTracingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -509,9 +614,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NAK3289CTH;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CarTrackingTestUITests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.example.CarTrackingTestUITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -526,9 +633,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NAK3289CTH;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CarTrackingTestUITests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.example.CarTrackingTestUITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -577,6 +686,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF8821842A4DEC4C0081FE6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF4B474A2A684D0300C30BB7 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF8821842A4DEC4C0081FE6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		AF8821852A4DEC4C0081FE6E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF8821842A4DEC4C0081FE6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AF8821872A4DEC4C0081FE6E /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF8821842A4DEC4C0081FE6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		AF8821892A4DEC4C0081FE6E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF8821842A4DEC4C0081FE6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AF88218B2A4DEC4C0081FE6E /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF8821842A4DEC4C0081FE6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		AF88218F2A562AE00081FE6E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF8821842A4DEC4C0081FE6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF88214D2A49A9CC0081FE6E /* Project object */;
 }

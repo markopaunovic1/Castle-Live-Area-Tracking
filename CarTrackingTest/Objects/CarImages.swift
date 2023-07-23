@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import FirebaseStorage
 
 class CarImages : ObservableObject {
+
     
     func xc90CarImages() -> String {
         
@@ -55,5 +57,9 @@ class CarImages : ObservableObject {
         
         let randomIndex = Int.random(in: 0..<v60Images.count)
         return v60Images[randomIndex]
+    }
+    
+    func downloadImages() {
+    
     }
 }

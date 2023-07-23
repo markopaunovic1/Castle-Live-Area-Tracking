@@ -13,7 +13,8 @@ struct ContentView: View {
     let car = cars
     @State var carsInLine = CarsInLine()
     @State private var showingPopover = false
-    @StateObject var randomCars = RandomOrdersModel(carImages: CarImages.init(), carContent: Car.init(carName: "", vehicleId: "", productionNumber: 0, vehicleColor: "", line: 0, carImage: ""), number: "", color: "")
+    @StateObject var randomCars = RandomOrdersModel(carImages: CarImages.init(), carContent: Car.init(carName: "", vehicleId: "", productionNumber: 0, vehicleColor: "", line: 0, carImage: "", orderDate: "", destination: ""), number: "", color: "", timer: Timer())
+    
     
     var body: some View {
         

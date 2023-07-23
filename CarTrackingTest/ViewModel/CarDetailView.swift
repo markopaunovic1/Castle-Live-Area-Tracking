@@ -12,12 +12,13 @@ struct CarDetailView: View {
     let item: String
     let id = UUID()
     
-    @StateObject var randomCars = RandomOrdersModel(carImages: CarImages.init(), carContent: Car.init(carName: "", vehicleId: "", productionNumber: 0, vehicleColor: "", line: 0, carImage: ""), number: "", color: "")
+    @StateObject var randomCars = RandomOrdersModel(carImages: CarImages.init(), carContent: Car.init(carName: "", vehicleId: "", productionNumber: 0, vehicleColor: "", line: 0, carImage: "", orderDate: "", destination: ""), number: "", color: "", timer: Timer())
+    
     
     var body: some View {
         
         VStack {
-            Text("INFO:")
+            Text("INFO: ")
                 .font(Font.custom("Broadsheet Bubble", size: 30))
                 .padding()
                 .frame(maxWidth: .infinity, maxHeight: 150)
@@ -57,7 +58,8 @@ struct parameter: View {
 
 struct resultDetail: View {
     
-    @StateObject var randomCars = RandomOrdersModel(carImages: CarImages.init(), carContent: Car.init(carName: "", vehicleId: "", productionNumber: 0, vehicleColor: "", line: 0, carImage: ""), number: "", color: "")
+    @StateObject var randomCars = RandomOrdersModel(carImages: CarImages.init(), carContent: Car.init(carName: "", vehicleId: "", productionNumber: 0, vehicleColor: "", line: 0, carImage: "", orderDate: "", destination: ""), number: "", color: "", timer: Timer())
+    
     
     var body: some View {
         VStack(spacing: 10) {

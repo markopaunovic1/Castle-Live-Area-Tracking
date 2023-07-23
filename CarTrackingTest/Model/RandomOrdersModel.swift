@@ -11,6 +11,7 @@ import FirebaseFirestoreSwift
 
 class RandomOrdersModel : ObservableObject {
     
+    let timer : Timer
     let carImages : CarImages
     var carContent : Car
     let db = Firestore.firestore()
@@ -19,13 +20,15 @@ class RandomOrdersModel : ObservableObject {
     @Published var color: String
     
     
-    init(carImages: CarImages, carContent: Car, number: String, color: String) {
+    init(carImages: CarImages, carContent: Car, number: String, color: String, timer: Timer) {
         self.carImages = carImages
         self.carContent = carContent
         self.number = number
         self.color = color
+        self.timer = timer
     }
     
+    //*MARK: Generates random Vehicle ID
     func generateRandomCarNumber(length: Int) -> String {
         let alphanumericCharecters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         let randomString = String((0..<length).map { _ in
@@ -34,6 +37,7 @@ class RandomOrdersModel : ObservableObject {
         return randomString
     }
     
+    //*MARK: Generates random car color
     func generateRandomCarColor() -> String {
         let colors = ["Crystal White","Onyx Black","Denim Blue"," Thunder Grey","Platinum Grey"," Silver Dawn","Bright Dusk","Black Stone"]
         let randomIndex = Int.random(in: 0..<colors.count)
@@ -41,6 +45,7 @@ class RandomOrdersModel : ObservableObject {
         return colors[randomIndex]
     }
     
+    //*MARK: Generates random car image
     func generateRandomImage() -> String {
         
         let carImages = ["v90-crystal-white","v90-onyx-black","v60-black-stone","v60-fusion-red","v90-silver-dusk","v90-thunder-grey","xc60-crystal-white","xc60-denim-blue","xc60-fusion-red","xc60-onyx-black","xc90-bright-dusk","xc90-denim-blue","xc90-onyx-black","xc90-platinum-grey","xc90-silver-dawn","xc90-thunder-grey","xc90Crystal white"]
@@ -49,12 +54,23 @@ class RandomOrdersModel : ObservableObject {
         return carImages[randomIndex]
     }
     
+    //*MARK: Generates random region to the order destination
     func generateRandomRegion() -> String {
         
         let regions = ["North America", "South America", "Central America", "Caribbean", "Central Asia", "Northeastern Asia", "Southeastern Asia", "Australia", "Northern Europe", "Southern Europe", "Eastern Europe", "Western Europe", "Middle East", "Northern Africa", "Southern Africa"]
         let randomIndex = Int.random(in: 0..<regions.count)
         
         return regions[randomIndex]
+    }
+    
+    //MARK: This function show when the vehicle was created
+    func productionByOrderTime(date: Date) -> String {
+        
+        let date = Date()
+        let dateformatter = DateFormatter()
+        dateformatter.dateFormat = "yyyy-MM-dd / HH:mm:ss"
+        
+        return dateformatter.string(from: date)
     }
     
     func generateNewCar() {
@@ -64,7 +80,9 @@ class RandomOrdersModel : ObservableObject {
                       productionNumber: 1,
                       vehicleColor: generateRandomCarColor(),
                       line: 1,
-                      carImage: carImages.xc90CarImages())
+                      carImage: carImages.xc90CarImages(),
+                      orderDate: productionByOrderTime(date: Date()),
+                      destination: generateRandomRegion())
         
         do {
             try db.collection("XC90").document().setData(from: car)

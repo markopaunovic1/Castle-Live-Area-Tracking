@@ -79,6 +79,9 @@ struct ContentView: View {
                     
                     CarsInLine()
                 }
+                .onAppear() {
+                    self.randomCars.readData()
+                }
             }
         }
         .preferredColorScheme(.light)

@@ -7,13 +7,14 @@
 
 import Foundation
 import FirebaseFirestore
+import FirebaseCore
 import FirebaseFirestoreSwift
 
 class RandomOrdersModel : ObservableObject {
     
     let timer : Timer
-    let carImages : CarImages
-    var carContent : Car
+    @Published var carImages : CarImages
+    @Published var carContent = [Car]()
     let db = Firestore.firestore()
     
     @Published var number: String
@@ -22,7 +23,6 @@ class RandomOrdersModel : ObservableObject {
     
     init(carImages: CarImages, carContent: Car, number: String, color: String, timer: Timer) {
         self.carImages = carImages
-        self.carContent = carContent
         self.number = number
         self.color = color
         self.timer = timer
@@ -113,7 +113,7 @@ class RandomOrdersModel : ObservableObject {
             
             "vehicleId" : generateRandomCarNumber(length: 15),
             "carName" : "XC90",
-            "Mix no. " : generateRandomCarNumber(length: carContent.productionNumber ?? 0),
+            "Mix no. " : generateRandomCarNumber(length: 15),
             "vehicleColor" : generateRandomCarColor(),
             "vehicleImage" : carImages.xc90CarImages(),
             "destination" : generateRandomRegion()
@@ -200,6 +200,57 @@ class RandomOrdersModel : ObservableObject {
             }
         }
         
+    }
+    
+    func readData() {
+        
+        db.collection("XC60").addSnapshotListener { (querySnapShot, error) in
+            guard let documents = querySnapShot?.documents else {
+                print("Error reading data")
+                return
+            }
+            
+            self.carContent = documents.map { ( queryDocumentSnapshot) -> Car in
+                let data = queryDocumentSnapshot.data()
+                let carName = data["carName"] as? String ?? ""
+                let carImage = data["carImage"] as? String ?? ""
+                let destination = data["destination"] as? String ?? ""
+                let line = data["line"] as? Int ?? 0
+                let orderDate = data["orderDate"] as? String ?? ""
+                let productionNumber = data["productionNumber"] as? Int ?? 0
+                let vehicleColor = data["vehicleColor"] as? String ?? ""
+                let vehicleId = data["vehicleId"] as? String ?? ""
+                
+                return Car(carName: carName,
+                           vehicleId: vehicleId,
+                           productionNumber: productionNumber,
+                           vehicleColor: vehicleColor,
+                           line: line,
+                           carImage: carImage,
+                           orderDate: orderDate,
+                           destination: destination)
+                
+            }
+        }
+
+        
+        
+        
+        
+        
+//        let docRef = db.collection("XC90").document()
+//
+//        docRef.getDocument() { (document, error) in
+//            if let document = document, document.exists {
+//                let dataDescription = document.data().map(String.init(describing: )) ?? "nil"
+//                print("Document data: \(dataDescription)")
+//            } else {
+//                print("Document does not exist")
+//            }
+//        }
+        
+        
+    
     }
 }
 

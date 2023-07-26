@@ -15,14 +15,14 @@ struct CarsInLine: View {
         
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                ForEach(0..<15) { index in
-                    NavigationLink(destination: CarDetailView(item: "Item \(index)")) {
+                ForEach(randomCars.carContent) { carData in
+                    NavigationLink(destination: CarDetailView(item: "Item \(randomCars.carContent)")) {
                         VStack {
-                            Image(randomCars.generateRandomImage())
+                            Image(carData.carImage ?? "nil")
                                 .resizable()
                                 .frame(width: 90, height: 35)
 
-                            Text("\(index)")
+                            Text(carData.carName ?? "nil")
                                 .bold()
                                 .foregroundColor(Color.gray)
                         }

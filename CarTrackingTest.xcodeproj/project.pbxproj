@@ -11,6 +11,7 @@
 		AF22998E2A56CA120007C860 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF22998D2A56CA120007C860 /* CarDetailView.swift */; };
 		AF2299932A56D7C00007C860 /* Broadsheet Bubble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF2299922A56D7C00007C860 /* Broadsheet Bubble.ttf */; };
 		AF4B474B2A684D0300C30BB7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF4B474A2A684D0300C30BB7 /* FirebaseFirestoreSwift */; };
+		AF4B474D2A71D07A00C30BB7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4B474C2A71D07A00C30BB7 /* DataManager.swift */; };
 		AF8821592A49A9CD0081FE6E /* CarTrackingTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8821582A49A9CD0081FE6E /* CarTrackingTestApp.swift */; };
 		AF88215B2A49A9CD0081FE6E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88215A2A49A9CD0081FE6E /* MainView.swift */; };
 		AF88215D2A49A9CE0081FE6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF88215C2A49A9CE0081FE6E /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		AF22998D2A56CA120007C860 /* CarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
 		AF2299912A56D09B0007C860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AF2299922A56D7C00007C860 /* Broadsheet Bubble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Broadsheet Bubble.ttf"; sourceTree = "<group>"; };
+		AF4B474C2A71D07A00C30BB7 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		AF8821552A49A9CD0081FE6E /* CarTrackingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarTrackingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8821582A49A9CD0081FE6E /* CarTrackingTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTrackingTestApp.swift; sourceTree = "<group>"; };
 		AF88215A2A49A9CD0081FE6E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -99,7 +101,7 @@
 		AF2299892A56C81C0007C860 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AFAF44AB2A58EA0100480A60 /* RandomOrdersModel.swift */,
+				AF4B474C2A71D07A00C30BB7 /* DataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,8 +109,7 @@
 		AF22998C2A56C9D80007C860 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				AF22998A2A56C8400007C860 /* CarsInLine.swift */,
-				AF22998D2A56CA120007C860 /* CarDetailView.swift */,
+				AFAF44AB2A58EA0100480A60 /* RandomOrdersModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -187,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				AF88215A2A49A9CD0081FE6E /* MainView.swift */,
+				AF22998A2A56C8400007C860 /* CarsInLine.swift */,
+				AF22998D2A56CA120007C860 /* CarDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFAF44B02A67245000480A60 /* CarImages.swift in Sources */,
+				AF4B474D2A71D07A00C30BB7 /* DataManager.swift in Sources */,
 				AF88215B2A49A9CD0081FE6E /* MainView.swift in Sources */,
 				AFAF44AC2A58EA0100480A60 /* RandomOrdersModel.swift in Sources */,
 				AF8821832A49AC0E0081FE6E /* Car.swift in Sources */,

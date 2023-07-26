@@ -12,6 +12,8 @@ import FirebaseFirestore
 @main
 struct CarTrackingTestApp: App {
     
+    @StateObject var datamanager = DataManager()
+    
     init() {
         printFonts()
         FirebaseApp.configure()
@@ -31,6 +33,7 @@ struct CarTrackingTestApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(datamanager)
         }
     }
 }
